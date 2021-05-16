@@ -1,0 +1,119 @@
+@import "../styles/global.scss";
+
+.Nav {
+  display: flex;
+
+  width: 65%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2rem;
+  .logo {
+    h1 {
+      color: $white;
+      font-weight: $navWeight;
+      line-height: $navLineHeight;
+      font-size: 36px;
+      text-decoration: none;
+      font-family: $poppins;
+    }
+  }
+  .NavBar {
+    ul {
+      display: flex;
+      li {
+        margin-right: 2rem;
+        color: $white;
+        font-weight: $navWeight;
+        line-height: $navLineHeight;
+        font-size: $fontSizeNav;
+        text-decoration: none;
+        font-family: $poppins;
+        cursor: pointer;
+        &:hover {
+          color: #0750d0;
+          transition: 300ms ease;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Nav {
+    display: flex;
+
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2rem;
+    .logo {
+      h1 {
+        color: $white;
+        font-weight: $navWeight;
+        line-height: $navLineHeight;
+        font-size: 36px;
+        text-decoration: none;
+        font-family: $poppins;
+      }
+    }
+    .NavBar {
+      .burger {
+        display: none;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 2rem;
+          color: $white;
+          font-weight: $navWeight;
+          line-height: $navLineHeight;
+          font-size: $fontSizeNav;
+          text-decoration: none;
+          font-family: $poppins;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Nav {
+    display: flex;
+    flex-direction: row-reverse;
+    .logo {
+      h1 {
+        font-size: 26px;
+      }
+    }
+    .NavBar {
+      .burger {
+        display: block;
+
+        .burgerButton {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+          z-index: 1;
+          width: 20%;
+          height: 20%;
+          margin: 0px;
+          padding: 0px;
+          border: none;
+          font-size: 0px;
+          background: transparent;
+          cursor: pointer;
+        }
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Nav {
+    width: 80%;
+  }
+}

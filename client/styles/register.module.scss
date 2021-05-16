@@ -1,0 +1,85 @@
+@import "../styles/global.scss";
+.Register {
+  padding: 5rem;
+  background-color: #101010;
+  border: 1px solid rgba(100, 99, 100, 0.3);
+  margin-right: 2rem;
+  position: relative;
+  margin-top: 5rem;
+  .form {
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      p {
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        color: $white;
+        margin-bottom: 2rem;
+        font-size: 20px;
+        font-family: $poppins;
+        cursor: pointer;
+      }
+      label {
+        color: $white;
+        margin-bottom: 2rem;
+        font-size: 26px;
+        font-family: $poppins;
+      }
+
+      .error {
+        color: red;
+        margin-bottom: 2rem;
+        font-size: 16px;
+        font-family: $poppins;
+      }
+      input {
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        font-family: $poppins;
+        border: none;
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+      input[type="file"] {
+        display: none;
+      }
+      .upload {
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        background-image: linear-gradient(135deg, #a1052c 0%, #0750d0 100%);
+        transition: 0.9s ease-in;
+        font-weight: 400;
+        font-size: 16px;
+        color: $white;
+        font-family: $poppins;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background: #0750d0;
+        }
+      }
+      .success {
+        margin-top: 1rem;
+        background: white;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 0.5rem;
+        }
+        h1 {
+          font-size: 16px;
+          font-family: $poppins;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../styles/global.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url(https://promo-theme.com/plaxer/wp-content/uploads/2019/12/bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .burger {
+    display: none;
+  }
+  .belowNav {
+    width: 65%;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .main {
+    .belowNav {
+      width: 80%;
+      margin: 5rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    .belowNav {
+      width: 85%;
+      margin: 5rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main {
+    .burger {
+      display: block;
+    }
+  }
+}

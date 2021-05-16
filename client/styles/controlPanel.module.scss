@@ -1,0 +1,22 @@
+.Panel {
+  ul {
+    .userBox {
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      img {
+        width: 175px;
+      }
+      h2 {
+        font-size: 25px;
+        color: red;
+        font-weight: bolder;
+      }
+      li {
+        font-size: 25px;
+        color: green;
+        font-weight: bolder;
+      }
+    }
+  }
+}
